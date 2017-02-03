@@ -33,6 +33,7 @@ ajaxRequest.responseType = 'arraybuffer';
 
 ajaxRequest.onload = function() {
   var audioData = ajaxRequest.response;
+  console.log("we got the audio");
 
   audioCtx.decodeAudioData(audioData, function(buffer) {
       concertHallBuffer = buffer;
