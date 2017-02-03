@@ -28,7 +28,7 @@ var convolver = audioCtx.createConvolver();
 
 var soundSource, concertHallBuffer;
 ajaxRequest = new XMLHttpRequest();
-ajaxRequest.open('GET', 'https://raw.githubusercontent.com/christopheralcock/visual-convolve/master/public/wave-convolve.ogg', true);
+ajaxRequest.open('GET', 'https://christopheralcock.github.io/visual-convolve/public/wave-convolve.ogg', true);
 ajaxRequest.responseType = 'arraybuffer';
 
 ajaxRequest.onload = function() {
